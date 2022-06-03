@@ -1,7 +1,8 @@
-/* exported data */
+/* global data */
+
 var $addEntryButton = document.querySelector('.add-entry-button');
 var $modalContainer = document.querySelector('.overlay-modal-container');
-var $submitButton = document.querySelector('.submit-button');
+// var $submitButton = document.querySelector('.submit-button');
 var $form = document.querySelector('form');
 var $selectDay = document.getElementById('day');
 var $selectTime = document.getElementById('time');
@@ -10,7 +11,7 @@ var $description = document.getElementById('text-area');
 $form.addEventListener('submit', formSubmitEvent);
 
 $addEntryButton.addEventListener('click', openModal);
-$submitButton.addEventListener('click', formSubmitEvent);
+// $submitButton.addEventListener('click', formSubmitEvent);
 
 function openModal(event) {
   $modalContainer.classList.remove('hidden');
