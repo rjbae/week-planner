@@ -8,6 +8,7 @@ var $selectDay = document.getElementById('day');
 var $selectTime = document.getElementById('time');
 var $description = document.getElementById('text-area');
 var $dayButtons = document.querySelectorAll('.style-day-button');
+var $daySpan = document.querySelector('span');
 
 $form.addEventListener('submit', formSubmitEvent);
 
@@ -35,7 +36,7 @@ function changeButtonFunc(event) {
   for (var i = 0; i < $dayButtons.length; i++) {
     var dayIndex = $dayButtons[i];
     if (event.target.getAttribute('id') === dayIndex.getAttribute('id')) {
-      console.log('match');
+      $daySpan.textContent = dayIndex.textContent;
     }
 
   }
