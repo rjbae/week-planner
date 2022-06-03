@@ -42,3 +42,9 @@ function changeButtonFunc(event) {
   }
 
 }
+
+// - objective: retrieve time and description values from data.entries.
+//    - retrieve newObj and get the values.
+//    - BOOM!
+
+console.log('hello');
