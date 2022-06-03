@@ -12,10 +12,48 @@
     <header>
       <h1>Weekly Planner</h1>
     </header>
+    <div class="day-button-container">
+      <button class="style-day-button">Monday</button>
+      <button class="style-day-button">Tuesday</button>
+      <button class="style-day-button">Wednesday</button>
+      <button class="style-day-button">Thursday</button>
+      <button class="style-day-button">Friday</button>
+      <button class="style-day-button">Saturday</button>
+      <button class="style-day-button">Sunday</button>
+    </div>
     <div class="row">
       <div class="column-full">
         <button class="add-entry-button">Add Entry</button>
       </div>
+    </div>
+    <div>
+      <h3 class="table-title">
+        Scheduled Events for <span>Monday</span>
+      </h3>
+      <table>
+        <thead >
+          <tr class="table-head">
+            <th class="width30">Time</th>
+            <th class="width70">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10:00 AM</td>
+            <td>Practice alogorithm</td>
+          </tr>
+          <tr>
+            <td>12:00 PM</td>
+            <td>Go for a run</td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+        </tbody>
+      </table>
     </div>
   </div>
   <div class="overlay-modal-container hidden">
@@ -69,6 +107,7 @@
       </form>
     </div>
   </div>
+  <script src="data.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

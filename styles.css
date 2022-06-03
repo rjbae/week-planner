@@ -12,7 +12,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 10rem;
+  padding-top: 2rem;
 }
 
 h1 {
@@ -80,4 +80,52 @@ textarea {
 
 .hidden {
   display: none;
+}
+
+.day-button-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.style-day-button {
+  width: 6rem;
+  height: 4.5rem;
+  text-align: center;
+  background-color: white;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.style-day-button:hover {
+  background-color: lightgray;
+}
+
+.table-title {
+  text-align: center;
+}
+
+th {
+  text-align: left;
+}
+
+th.width30 {
+  width: 30%;
+}
+
+th.width70 {
+  width: 70%;
+}
+
+table {
+  width: 100%;
+}
+
+tr:nth-child(odd) {
+  background-color: bisque;
+}
+
+tr.table-head {
+  background-color: rgb(185, 185, 185);
 }
