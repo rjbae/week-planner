@@ -120,6 +120,9 @@ th.width70 {
 
 table {
   width: 100%;
+  empty-cells: show;
+  border: 1px solid;
+  padding-right: 1px;
 }
 
 tr:nth-child(odd) {
@@ -128,4 +131,8 @@ tr:nth-child(odd) {
 
 tr.table-head {
   background-color: rgb(185, 185, 185);
+}
+
+td {
+  height: 25px;
 }
