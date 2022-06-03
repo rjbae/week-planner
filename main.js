@@ -7,6 +7,7 @@ var $form = document.querySelector('form');
 var $selectDay = document.getElementById('day');
 var $selectTime = document.getElementById('time');
 var $description = document.getElementById('text-area');
+var $dayButtons = document.querySelectorAll('.style-day-button');
 
 $form.addEventListener('submit', formSubmitEvent);
 
@@ -27,9 +28,16 @@ function formSubmitEvent(event) {
   data.entries.push(newObj);
 }
 
-var $buttons = document.querySelector('.day-button-container');
-$buttons.addEventListener('click', changeButtonFunc);
+var $buttonsContainer = document.querySelector('.day-button-container');
+$buttonsContainer.addEventListener('click', changeButtonFunc);
 function changeButtonFunc(event) {
-  console.log('change this!');
-  console.log('another');
+
+  for (var i = 0; i < $dayButtons.length; i++) {
+    var dayIndex = $dayButtons[i];
+    if (event.target.getAttribute('id') === dayIndex.getAttribute('id')) {
+      console.log('match');
+    }
+
+  }
+
 }
