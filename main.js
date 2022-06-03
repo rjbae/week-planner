@@ -37,6 +37,7 @@ function changeButtonFunc(event) {
     var dayIndex = $dayButtons[i];
     if (event.target.getAttribute('id') === dayIndex.getAttribute('id')) {
       $daySpan.textContent = dayIndex.textContent;
+      loadEntries();
     }
 
   }
@@ -48,3 +49,26 @@ function changeButtonFunc(event) {
 //    - BOOM!
 
 console.log('hello');
+/* populating tr's */
+
+/* need to loop through data.entries */
+
+function createDomTree(object) {
+
+  var trOne = document.createElement('tr');
+  var tdOne = document.createElement('td');
+  tdOne.textContent =
+  trOne.appendChild(tdOne);
+  var tdTwo = document.createElement('td');
+  td;
+  trOne.appendChild(tdTwo);
+  return trOne;
+}
+
+var tBodyAppend = document.querySelector('.tbody');
+function loadEntries() {
+  for (var i = 0; i < data.entries.length; i++) {
+    var dataEntries = createDomTree(data.entries[i]);
+    tBodyAppend.appendChild(dataEntries);
+  }
+}
