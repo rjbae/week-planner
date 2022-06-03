@@ -23,12 +23,17 @@ h1 {
   text-align: center;
   width: 150px;
   height: 40px;
+  cursor: pointer;
+}
+
+.add-entry-button:hover {
+  background-color: lightblue;
 }
 
 textarea {
   width: 100%;
   margin-top: 10px;
-  height: 79px;
+  height: 5rem;
   resize: none;
   font-weight: 500;
   font-size: 16px;
@@ -48,8 +53,8 @@ textarea {
 
 .modal-message {
   background-color: white;
-  width: 40%;
-  height: 30%;
+  width: 30rem;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -65,4 +70,14 @@ textarea {
 .modal-button {
   display: flex;
   justify-content: flex-end;
+  padding-top: 0.8rem;
+}
+
+.submit-button {
+  border: 2px solid black;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
 }

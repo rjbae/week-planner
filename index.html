@@ -18,12 +18,12 @@
       </div>
     </div>
   </div>
-  <div class="overlay-modal-container">
+  <div class="overlay-modal-container hidden">
     <div class="modal-message">
       <form action="#" id="new-entry">
         <h2 class="h2-modal">Add Entry</h2>
         <label for="day-of-the-week"></label>
-        <select name="day-of-the-week" id="day">
+        <select name="day-of-the-week" id="day" required>
           <option value="day-of-week">Day of Week</option>
           <option value="monday">Monday</option>
           <option value="tuesday">Tuesday</option>
@@ -34,7 +34,7 @@
           <option value="sunday">Sunday</option>
         </select>
         <label for="time"></label>
-        <select name="time" id="time">
+        <select name="time" id="time" required>
           <option value="time">Time</option>
           <option value="12am">12:00 AM</option>
           <option value="1am">1:00 AM</option>
@@ -62,7 +62,7 @@
           <option value="11pm">11:00 PM</option>
         </select>
         <label for="description"></label>
-        <textarea placeholder="Description"></textarea>
+        <textarea placeholder="Description" required></textarea>
         <div class="modal-button">
           <button type="submit" class="submit-button">Submit</button>
         </div>
