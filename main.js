@@ -31,4 +31,5 @@ var $buttons = document.querySelector('.day-button-container');
 $buttons.addEventListener('click', changeButtonFunc);
 function changeButtonFunc(event) {
   console.log('change this!');
+  console.log('another');
 }
