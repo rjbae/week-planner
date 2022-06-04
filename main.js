@@ -48,7 +48,6 @@ function changeButtonFunc(event) {
 //    - retrieve newObj and get the values.
 //    - BOOM!
 
-console.log('hello');
 /* populating tr's */
 
 /* need to loop through data.entries */
@@ -56,17 +55,20 @@ console.log('hello');
 function createDomTree(object) {
 
   var trOne = document.createElement('tr');
+
   var tdOne = document.createElement('td');
-  tdOne.textContent =
-  trOne.appendChild(tdOne);
   var tdTwo = document.createElement('td');
-  td;
+  // tdOne.textContent = object.time.value;
+  trOne.appendChild(tdOne);
+
+  // tdTwo.textContent = object.description.value;
   trOne.appendChild(tdTwo);
+
   return trOne;
 }
 
 var tBodyAppend = document.querySelector('.tbody');
-function loadEntries() {
+function loadEntries(object) {
   for (var i = 0; i < data.entries.length; i++) {
     var dataEntries = createDomTree(data.entries[i]);
     tBodyAppend.appendChild(dataEntries);

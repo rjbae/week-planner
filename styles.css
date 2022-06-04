@@ -136,3 +136,8 @@ tr.table-head {
 td {
   height: 25px;
 }
+
+.update-button {
+  display: inline-block;
+  padding-left: 20em;
+}
